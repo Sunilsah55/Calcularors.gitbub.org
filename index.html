@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <div class="input-container">
+            <input type="number" id="Num1" placeholder="Enter First number">
+        </div>
+        <div class="input-container">
+        <input type="number"id="Num2" placeholder="Enter second number">
+        </div>
+
+        <div class="button-container">
+        <button onclick="Add()">ADD</button>
+        <button onclick="Sub()"> Sub </button>
+        <button onclick="Mul()"> Mul </button>
+        <button onclick="Div()"> Div </button>
+        </div>
+        <div class="result-container" id="res-holder">
+            0
+        </div>
+    </div>
+<script type="text/javascript">
+    function Add()
+    {
+        var x=parseFloat(document.getElementById('Num1').value);
+        var y=parseFloat(document.getElementById('Num2').value);
+        var z= x+y;
+        var result=z.toFixed(2);
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        document.getElementById('res-holder').innerHTML=result;
+    }
+    function Sub()
+    {
+        var x=parseFloat(document.getElementById('Num1').value);
+        var y=parseFloat(document.getElementById('Num2').value);
+        var z= x-y;
+        var result=z.toFixed(2);
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        document.getElementById('res-holder').innerHTML=result;
+    } function Mul()
+    {
+        var x=parseFloat(document.getElementById('Num1').value);
+        var y=parseFloat(document.getElementById('Num2').value);
+        var z= x*y;
+        var result=z.toFixed(2);
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        document.getElementById('res-holder').innerHTML=result;
+    } function Div()
+    {
+        var x=parseFloat(document.getElementById('Num1').value);
+        var y=parseFloat(document.getElementById('Num2').value);
+        var z= x/y;
+        var result=z.toFixed(2);
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        document.getElementById('res-holder').innerHTML=result;
+    }
+    </script>
+</body>
+</html>
